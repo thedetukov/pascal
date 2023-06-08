@@ -1,0 +1,14 @@
+ {
+         "configurations": [
+             {
+                "name": "Debug",
+                 "type": "gdb",
+                 "request": "launch",
+                 "target": ".build/debug/${fileBasenameNoExtension}",
+                 "cwd": "${workspaceRoot}",
+                 "valuesFormatting": "parseText",
+                 "preLaunchTask": "${defaultBuildTask}",
+                 "terminal": "${workspaceRoot}/.vscode/gdb-wrapper.sh",
+             }
+         ]
+     }
